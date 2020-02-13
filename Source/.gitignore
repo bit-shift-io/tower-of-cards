@@ -1,0 +1,7 @@
+.builds
+.repo
+.import
+*.log
+*.bak
+gs_logger
+gs_ecs_debug 

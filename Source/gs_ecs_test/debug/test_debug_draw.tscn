@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://gs_ecs_test/debug/test_debug_draw.gd" type="Script" id=1]
+
+[node name="TestDebugDraw" type="Node2D"]
+z_index = 999
+script = ExtResource( 1 )
+

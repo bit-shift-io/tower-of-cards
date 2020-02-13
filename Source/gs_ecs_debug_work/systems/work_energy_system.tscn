@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://gs_ecs_debug_work/systems/work_energy_system.gd" type="Script" id=1]
+
+[node name="WorkEnergySystem" type="Node"]
+script = ExtResource( 1 )
+COMPONENTS = "energy"

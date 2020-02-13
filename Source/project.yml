@@ -1,0 +1,25 @@
+# gspm project.yml <http://https://gitlab.com/godot-stuff/gs-project-manager/wikis/schema>
+name: gs-ecs
+path: .
+version: 3.1.0
+default_type: git
+godot:
+  location: $310$
+project:
+  url: none
+  
+assets:
+
+  gs-logger:
+    location: git@gitlab.com:godot-stuff/gs-logger.git
+    branch: 3.1
+    includes:
+      - dir: gs_logger      
+      
+pre_install:
+
+post_install:
+
+pre_build:
+
+post_build:

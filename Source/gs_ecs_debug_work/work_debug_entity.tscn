@@ -1,0 +1,29 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://gs_ecs_debug_work/work_debug_entity.gd" type="Script" id=1]
+[ext_resource path="res://gs_ecs_debug/systems/debug_system.tscn" type="PackedScene" id=2]
+[ext_resource path="res://gs_ecs_debug_work/nodes/work_debug_node.tscn" type="PackedScene" id=3]
+[ext_resource path="res://gs_ecs_debug_work/entities/work_entity.tscn" type="PackedScene" id=4]
+[ext_resource path="res://gs_ecs_debug_work/systems/work_rotating_system.tscn" type="PackedScene" id=5]
+[ext_resource path="res://gs_ecs_debug_work/systems/work_energy_system.tscn" type="PackedScene" id=6]
+
+[node name="TestDebugEntity" type="Node"]
+script = ExtResource( 1 )
+
+[node name="DebugSystem0" parent="." instance=ExtResource( 2 )]
+
+[node name="DebugSystem1" parent="." instance=ExtResource( 2 )]
+DEBUG_NODE_SCENE = ExtResource( 3 )
+
+[node name="TestEntity0" parent="." instance=ExtResource( 4 )]
+position = Vector2( 128, 79 )
+
+[node name="TestEntity1" parent="." instance=ExtResource( 4 )]
+position = Vector2( 352, 162 )
+
+[node name="TestEntity2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 226, 342 )
+
+[node name="WorkRotatingSystem" parent="." instance=ExtResource( 5 )]
+
+[node name="WorkEnergySystem" parent="." instance=ExtResource( 6 )]

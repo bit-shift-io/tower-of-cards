@@ -1,0 +1,13 @@
+# Exclude file not necessary for the Asset Library installation
+
+/.gitattributes     export-ignore
+/.gitignore         export-ignore
+/HISTORY.md         export-ignore
+/LICENSE.md         export-ignore
+/README.md          export-ignore
+/project.godot      export-ignore
+/project.yml        export-ignore
+/gs_ecs_test        export-ignore
+/icon.png	    export-ignore
+/icon.png.import    export-ignore
+

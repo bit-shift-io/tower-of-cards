@@ -1,0 +1,189 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Reference",
+"class": "Appender",
+"language": "GDScript",
+"path": "res://gs_logger/appender.gd"
+}, {
+"base": "Node",
+"class": "Component",
+"language": "GDScript",
+"path": "res://gs_ecs/component.gd"
+}, {
+"base": "Appender",
+"class": "ConsoleAppender",
+"language": "GDScript",
+"path": "res://gs_logger/appenders/console_appender.gd"
+}, {
+"base": "Component",
+"class": "Controllable",
+"language": "GDScript",
+"path": "res://gs_ecs_test/components/controllable.gd"
+}, {
+"base": "Component",
+"class": "Debug",
+"language": "GDScript",
+"path": "res://gs_ecs_debug/components/debug.gd"
+}, {
+"base": "Node2D",
+"class": "DebugNode",
+"language": "GDScript",
+"path": "res://gs_ecs_debug/nodes/debug_node.gd"
+}, {
+"base": "System",
+"class": "DebugSystem",
+"language": "GDScript",
+"path": "res://gs_ecs_debug/systems/debug_system.gd"
+}, {
+"base": "Component",
+"class": "Energy",
+"language": "GDScript",
+"path": "res://gs_ecs_test/components/energy.gd"
+}, {
+"base": "Node",
+"class": "Entity",
+"language": "GDScript",
+"path": "res://gs_ecs/entity.gd"
+}, {
+"base": "Appender",
+"class": "FileAppender",
+"language": "GDScript",
+"path": "res://gs_logger/appenders/file_appender.gd"
+}, {
+"base": "Node",
+"class": "Group",
+"language": "GDScript",
+"path": "res://gs_ecs/group.gd"
+}, {
+"base": "Layout",
+"class": "HtmlLayout",
+"language": "GDScript",
+"path": "res://gs_logger/layouts/html_layout.gd"
+}, {
+"base": "Reference",
+"class": "Layout",
+"language": "GDScript",
+"path": "res://gs_logger/layout.gd"
+}, {
+"base": "Reference",
+"class": "Message",
+"language": "GDScript",
+"path": "res://gs_logger/message.gd"
+}, {
+"base": "Component",
+"class": "Movable",
+"language": "GDScript",
+"path": "res://gs_ecs_test/components/movable.gd"
+}, {
+"base": "System",
+"class": "MovingSystem",
+"language": "GDScript",
+"path": "res://gs_ecs_test/systems/test_moving_system.gd"
+}, {
+"base": "Layout",
+"class": "PatternLayout",
+"language": "GDScript",
+"path": "res://gs_logger/layouts/pattern_layout.gd"
+}, {
+"base": "Component",
+"class": "Rotating",
+"language": "GDScript",
+"path": "res://gs_ecs_test/components/rotating.gd"
+}, {
+"base": "System",
+"class": "RotatingSystem",
+"language": "GDScript",
+"path": "res://gs_ecs_test/systems/test_rotating_system.gd"
+}, {
+"base": "Node",
+"class": "System",
+"language": "GDScript",
+"path": "res://gs_ecs/system.gd"
+}, {
+"base": "System",
+"class": "TestEnergySystem",
+"language": "GDScript",
+"path": "res://gs_ecs_test/systems/test_energy_system.gd"
+}, {
+"base": "Entity",
+"class": "TestEntity",
+"language": "GDScript",
+"path": "res://gs_ecs_test/entities/test_entity.gd"
+}, {
+"base": "System",
+"class": "WorkEnergySystem",
+"language": "GDScript",
+"path": "res://gs_ecs_debug_work/systems/work_energy_system.gd"
+}, {
+"base": "System",
+"class": "WorkMovingSystem",
+"language": "GDScript",
+"path": "res://gs_ecs_debug_work/systems/work_moving_system.gd"
+}, {
+"base": "System",
+"class": "WorkRotatingSystem",
+"language": "GDScript",
+"path": "res://gs_ecs_debug_work/systems/work_rotating_system.gd"
+} ]
+_global_script_class_icons={
+"Appender": "",
+"Component": "",
+"ConsoleAppender": "",
+"Controllable": "",
+"Debug": "",
+"DebugNode": "",
+"DebugSystem": "",
+"Energy": "",
+"Entity": "",
+"FileAppender": "",
+"Group": "",
+"HtmlLayout": "",
+"Layout": "",
+"Message": "",
+"Movable": "",
+"MovingSystem": "",
+"PatternLayout": "",
+"Rotating": "",
+"RotatingSystem": "",
+"System": "",
+"TestEnergySystem": "",
+"TestEntity": "",
+"WorkEnergySystem": "",
+"WorkMovingSystem": "",
+"WorkRotatingSystem": ""
+}
+
+[application]
+
+config/name="gs-ecs"
+config/description="Gs Ecs"
+run/main_scene="res://gs_ecs_test/tests/test_debug_entity.tscn"
+config/version="0.0.0"
+
+[autoload]
+
+Logger="*res://gs_logger/logger.gd"
+ECS="*res://gs_ecs/ecs.gd"
+
+[display]
+
+window/size/width=960
+window/size/height=540
+window/size/test_width=960
+window/size/test_height=540
+window/stretch/mode="2d"
+window/stretch/aspect="keep"
+window/stretch/shrink="1"
+
+[logger]
+
+level="DEBUG"
