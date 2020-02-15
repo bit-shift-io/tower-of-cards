@@ -129,8 +129,8 @@ def build_release_exes():
         target="release"
 
         # to ship/run with debug builds:
-        optimised = ".debug"
-        target = "debug"
+        #optimised = ".debug"
+        #target = "debug"
 
         # special case for editor
         if (target_dir_name == "Editor"):

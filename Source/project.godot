@@ -166,7 +166,7 @@ _global_script_class_icons={
 
 config/name="gs-ecs"
 config/description="Gs Ecs"
-run/main_scene="res://gs_ecs_test/tests/test_debug_entity.tscn"
+run/main_scene="res://Menu.tscn"
 config/version="0.0.0"
 
 [autoload]
